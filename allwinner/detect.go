@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"adev73/x/host/v3/distro"
+	"github.com/adev73/host/v3/distro"
 )
 
 // Present detects whether the host CPU is an Allwinner CPU.

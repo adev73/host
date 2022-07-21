@@ -6,5 +6,5 @@ package host
 
 import (
 	// Make sure sysfs drivers are registered.
-	_ "adev73/x/host/v3/sysfs"
+	_ "github.com/adev73/host/v3/sysfs"
 )

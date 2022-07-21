@@ -21,7 +21,7 @@ import (
 	"log"
 	"os"
 
-	"adev73/x/host/v3/pmem"
+	"github.com/adev73/host/v3/pmem"
 
 	"periph.io/x/conn/v3/driver/driverreg"
 )

@@ -12,7 +12,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"adev73/x/host/v3/fs"
+	"github.com/adev73/host/v3/fs"
 )
 
 // Slice can be transparently viewed as []byte, []uint32 or a struct.

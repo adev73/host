@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"sort"
 
-	"adev73/x/host/v3/sysfs"
+	"github.com/adev73/host/v3/sysfs"
 
 	"periph.io/x/conn/v3/gpio"
 )

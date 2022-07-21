@@ -6,8 +6,8 @@ package host
 
 import (
 	// Make sure CPU and board drivers are registered.
-	_ "adev73/x/host/v3/allwinner"
-	_ "adev73/x/host/v3/bcm283x"
-	_ "adev73/x/host/v3/pine64"
-	_ "adev73/x/host/v3/rpi"
+	_ "github.com/adev73/host/v3/allwinner"
+	_ "github.com/adev73/host/v3/bcm283x"
+	_ "github.com/adev73/host/v3/pine64"
+	_ "github.com/adev73/host/v3/rpi"
 )

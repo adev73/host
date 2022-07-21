@@ -15,9 +15,9 @@ import (
 	"fmt"
 	"time"
 
-	"adev73/x/host/v3/allwinner"
-	"adev73/x/host/v3/chip"
-	"adev73/x/host/v3/pine64"
+	"github.com/adev73/host/v3/allwinner"
+	"github.com/adev73/host/v3/chip"
+	"github.com/adev73/host/v3/pine64"
 
 	"periph.io/x/conn/v3/gpio"
 )

@@ -7,7 +7,7 @@ package mt7688
 import (
 	"strings"
 
-	"adev73/x/host/v3/distro"
+	"github.com/adev73/host/v3/distro"
 
 	"periph.io/x/conn/v3/driver/driverreg"
 )

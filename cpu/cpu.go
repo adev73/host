@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"adev73/x/host/v3/fs"
+	"github.com/adev73/host/v3/fs"
 )
 
 // MaxSpeed returns the processor maximum speed in Hz.

@@ -7,7 +7,7 @@ package pmem_test
 import (
 	"log"
 
-	"adev73/x/host/v3/pmem"
+	"github.com/adev73/host/v3/pmem"
 )
 
 func ExampleMapAsPOD() {

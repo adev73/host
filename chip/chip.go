@@ -13,9 +13,9 @@ import (
 	"strconv"
 	"strings"
 
-	"adev73/x/host/v3/allwinner"
-	"adev73/x/host/v3/distro"
-	"adev73/x/host/v3/fs"
+	"github.com/adev73/host/v3/allwinner"
+	"github.com/adev73/host/v3/distro"
+	"github.com/adev73/host/v3/fs"
 
 	"periph.io/x/conn/v3/driver/driverreg"
 	"periph.io/x/conn/v3/gpio"

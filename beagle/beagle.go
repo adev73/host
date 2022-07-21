@@ -7,7 +7,7 @@ package beagle
 import (
 	"strings"
 
-	"adev73/x/host/v3/distro"
+	"github.com/adev73/host/v3/distro"
 )
 
 // Present returns true if the host is a BeagleBone.

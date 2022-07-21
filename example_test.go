@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"log"
 
-	"adev73/x/host/v3"
+	"github.com/adev73/host/v3"
 )
 
 func ExampleInit() {

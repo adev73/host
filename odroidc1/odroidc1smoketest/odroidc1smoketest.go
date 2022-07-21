@@ -13,7 +13,7 @@ import (
 	"sort"
 	"strconv"
 
-	"adev73/x/host/v3/odroidc1"
+	"github.com/adev73/host/v3/odroidc1"
 
 	"periph.io/x/conn/v3/gpio"
 	"periph.io/x/conn/v3/gpio/gpioreg"

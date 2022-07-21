@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"testing"
 
-	"adev73/x/host/v3/pmem"
-	"adev73/x/host/v3/videocore"
+	"github.com/adev73/host/v3/pmem"
+	"github.com/adev73/host/v3/videocore"
 
 	"periph.io/x/conn/v3/gpio"
 	"periph.io/x/conn/v3/gpio/gpiostream"

@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"adev73/x/host/v3/pmem"
-	"adev73/x/host/v3/sysfs"
+	"github.com/adev73/host/v3/pmem"
+	"github.com/adev73/host/v3/sysfs"
 
 	"periph.io/x/conn/v3/driver/driverreg"
 	"periph.io/x/conn/v3/gpio"

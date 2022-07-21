@@ -20,8 +20,8 @@ import (
 	"sync"
 	"unsafe"
 
-	"adev73/x/host/v3/fs"
-	"adev73/x/host/v3/pmem"
+	"github.com/adev73/host/v3/fs"
+	"github.com/adev73/host/v3/pmem"
 )
 
 // Mem represents contiguous physically locked memory that was allocated by

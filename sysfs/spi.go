@@ -17,7 +17,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"adev73/x/host/v3/fs"
+	"github.com/adev73/host/v3/fs"
 
 	"periph.io/x/conn/v3"
 	"periph.io/x/conn/v3/driver/driverreg"

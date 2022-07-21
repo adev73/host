@@ -8,8 +8,8 @@ import (
 	"errors"
 	"strings"
 
-	"adev73/x/host/v3/allwinner"
-	"adev73/x/host/v3/distro"
+	"github.com/adev73/host/v3/allwinner"
+	"github.com/adev73/host/v3/distro"
 
 	"periph.io/x/conn/v3/driver/driverreg"
 	"periph.io/x/conn/v3/pin"

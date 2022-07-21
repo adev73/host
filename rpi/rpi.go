@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"os"
 
-	"adev73/x/host/v3/bcm283x"
-	"adev73/x/host/v3/distro"
+	"github.com/adev73/host/v3/bcm283x"
+	"github.com/adev73/host/v3/distro"
 
 	"periph.io/x/conn/v3/driver/driverreg"
 	"periph.io/x/conn/v3/gpio"

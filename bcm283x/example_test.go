@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"log"
 
-	"adev73/x/host/v3"
-	"adev73/x/host/v3/bcm283x"
+	"github.com/adev73/host/v3"
+	"github.com/adev73/host/v3/bcm283x"
 
 	"periph.io/x/conn/v3/physic"
 )

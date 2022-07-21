@@ -7,7 +7,7 @@ package videocore_test
 import (
 	"log"
 
-	"adev73/x/host/v3/videocore"
+	"github.com/adev73/host/v3/videocore"
 )
 
 func ExampleAlloc() {

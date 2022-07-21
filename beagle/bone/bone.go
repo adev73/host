@@ -16,9 +16,9 @@ package bone
 import (
 	"errors"
 
-	"adev73/x/host/v3/beagle/black"
-	"adev73/x/host/v3/beagle/green"
-	"adev73/x/host/v3/sysfs"
+	"github.com/adev73/host/v3/beagle/black"
+	"github.com/adev73/host/v3/beagle/green"
+	"github.com/adev73/host/v3/sysfs"
 
 	"periph.io/x/conn/v3/driver/driverreg"
 	"periph.io/x/conn/v3/gpio"

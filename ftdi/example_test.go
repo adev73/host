@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"log"
 
-	"adev73/x/host/v3"
-	"adev73/x/host/v3/ftdi"
+	"github.com/adev73/host/v3"
+	"github.com/adev73/host/v3/ftdi"
 )
 
 func Example() {

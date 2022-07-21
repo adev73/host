@@ -13,7 +13,7 @@ Steps to reproduce the behavior:
 package main
 
 import (
-  "adev73/x/host/v3"
+  "github.com/adev73/host/v3"
 )
 
 func main() {

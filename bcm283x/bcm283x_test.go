@@ -4,7 +4,7 @@
 
 package bcm283x
 
-import "adev73/x/host/v3/fs"
+import "github.com/adev73/host/v3/fs"
 
 func init() {
 	fs.Inhibit()

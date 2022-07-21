@@ -10,7 +10,7 @@ import (
 	"errors"
 	"testing"
 
-	"adev73/x/host/v3/fs"
+	"github.com/adev73/host/v3/fs"
 )
 
 func TestSlice(t *testing.T) {

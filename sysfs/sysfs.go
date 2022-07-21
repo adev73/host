@@ -7,7 +7,7 @@ package sysfs
 import (
 	"io"
 
-	"adev73/x/host/v3/fs"
+	"github.com/adev73/host/v3/fs"
 )
 
 var ioctlOpen = ioctlOpenDefault

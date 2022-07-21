@@ -8,8 +8,8 @@ import (
 	"errors"
 	"testing"
 
-	"adev73/x/host/v3/fs"
-	"adev73/x/host/v3/pmem"
+	"github.com/adev73/host/v3/fs"
+	"github.com/adev73/host/v3/pmem"
 )
 
 func TestClose(t *testing.T) {

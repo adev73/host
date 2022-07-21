@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"time"
 
-	"adev73/x/host/v3/ftdi"
+	"github.com/adev73/host/v3/ftdi"
 
 	"periph.io/x/conn/v3/gpio"
 )

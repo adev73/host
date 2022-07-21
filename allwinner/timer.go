@@ -7,7 +7,7 @@ package allwinner
 import (
 	"time"
 
-	"adev73/x/host/v3/cpu"
+	"github.com/adev73/host/v3/cpu"
 )
 
 // ReadTime returns the time on a monotonic timer.

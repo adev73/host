@@ -6,16 +6,16 @@ package host
 
 import (
 	// Make sure CPU and board drivers are registered.
-	_ "adev73/x/host/v3/allwinner"
-	_ "adev73/x/host/v3/am335x"
-	_ "adev73/x/host/v3/bcm283x"
-	_ "adev73/x/host/v3/beagle/bone"
-	_ "adev73/x/host/v3/beagle/green"
-	_ "adev73/x/host/v3/chip"
-	_ "adev73/x/host/v3/odroidc1"
+	_ "github.com/adev73/host/v3/allwinner"
+	_ "github.com/adev73/host/v3/am335x"
+	_ "github.com/adev73/host/v3/bcm283x"
+	_ "github.com/adev73/host/v3/beagle/bone"
+	_ "github.com/adev73/host/v3/beagle/green"
+	_ "github.com/adev73/host/v3/chip"
+	_ "github.com/adev73/host/v3/odroidc1"
 
 	// While this board is ARM64, it may run ARM 32 bits binaries so load it on
 	// 32 bits builds too.
-	_ "adev73/x/host/v3/pine64"
-	_ "adev73/x/host/v3/rpi"
+	_ "github.com/adev73/host/v3/pine64"
+	_ "github.com/adev73/host/v3/rpi"
 )

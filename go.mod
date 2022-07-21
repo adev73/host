@@ -2,7 +2,7 @@
 // Use of this source code is governed under the Apache License, Version 2.0
 // that can be found in the LICENSE file.
 
-module adev73/x/host/v3
+module github.com/adev73/host/v3
 
 go 1.13
 

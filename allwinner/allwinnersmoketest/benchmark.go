@@ -9,7 +9,7 @@ import (
 	"flag"
 	"fmt"
 
-	"adev73/x/host/v3/allwinner"
+	"github.com/adev73/host/v3/allwinner"
 
 	"periph.io/x/conn/v3/gpio"
 	"periph.io/x/conn/v3/gpio/gpioreg"
