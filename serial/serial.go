@@ -13,7 +13,9 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strconv"
+	"strings"
 	"sync"
 	"syscall"
 
@@ -26,42 +28,53 @@ import (
 )
 
 // Enumerate returns the available serial buses as exposed by the OS.
-//
-// TODO(maruel): Port number are likely not useful, we need port names.
-func Enumerate() ([]int, error) {
-	var out []int
+func Enumerate(prefix string) ([]string, error) {
+
 	if !isWindows {
 		// Do not use "/sys/class/tty/ttyS0/" as these are all owned by root.
-		prefix := "/dev/ttyS"
+		if prefix != "" {
+			prefix = fmt.Sprintf("%s%s", osPrefix, prefix)
+		} else {
+			prefix = osPrefix
+		}
+
 		items, err := filepath.Glob(prefix + "*")
 		if err != nil {
 			return nil, err
 		}
-		out = make([]int, 0, len(items))
-		for _, item := range items {
-			i, err := strconv.Atoi(item[len(prefix):])
-			if err != nil {
-				continue
-			}
-			out = append(out, i)
+		for i := range items {
+			items[i] = strings.TrimPrefix(items[i], osPrefix)
 		}
+		return items, nil
 	}
-	return out, nil
+	return nil, errors.New("not implemented")
 }
 
-func New(portNumber int) (*Port, error) {
+func New(portName string) (*Port, error) {
 	// Expose newPortDevFs to allow a program to actually get access to a serial port
-	return newPortDevFs(portNumber)
+	if !isWindows {
+		return newPortDevFs(portName)
+	}
+	return nil, errors.New("not implemented")
 }
 
-func newPortDevFs(portNumber int) (*Port, error) {
+func newPortDevFs(portName string) (*Port, error) {
 	// Use the devfs path for now.
-	name := fmt.Sprintf("ttyS%d", portNumber)
-	f, err := os.OpenFile("/dev/"+name, os.O_RDWR|syscall.O_NOCTTY, os.ModeExclusive)
+
+	f, err := os.OpenFile(osPrefix+portName, os.O_RDWR|syscall.O_NOCTTY, os.ModeExclusive)
 	if err != nil {
 		return nil, err
 	}
-	p := &Port{serialConn{name: name, f: f, portNumber: portNumber}}
+
+	// Determine the port number
+	findPortNoRX := regexp.MustCompile("^[A-Za-z/].*?([0-9]+)$")
+	portN := 0
+	if findPortNoRX.MatchString(portName) {
+		portS := findPortNoRX.FindStringSubmatch(portName)
+		portN, _ = strconv.Atoi(portS[1])
+	}
+
+	p := &Port{serialConn{name: osPrefix + portName, f: f, portNumber: portN}}
 	return p, nil
 }
 

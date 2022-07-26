@@ -8,3 +8,5 @@
 package serial
 
 const isWindows = false
+
+var osPrefix = "/dev/tty"

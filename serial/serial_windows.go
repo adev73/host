@@ -8,3 +8,5 @@
 package serial
 
 const isWindows = true
+
+var osPrefix = "COM"
